@@ -1,0 +1,303 @@
+/* App.css */
+.card {
+  border-radius: 8px;
+ 
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.btn-primary {
+  background-color: #007bff; 
+  border: none; 
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; 
+}
+
+
+
+
+
+
+
+
+.form-control-medium {
+  font-size: 16px; 
+  height: 38px; 
+}
+
+
+.form-label-medium {
+  font-size: 16px;
+}
+
+
+.btn-custom {
+  font-size: 16px; 
+  padding: 10px; 
+}
+
+
+/* .................Home Page................. */
+
+
+.home-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.home-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+}
+
+.home-header h1 {
+  margin: 0;
+}
+
+.admission-info {
+  margin: 20px 0;
+}
+
+.admission-info h2 {
+  color: #4CAF50;
+}
+
+.admission-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admission-info li {
+  background-color: #e8f5e9;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cta-section {
+  margin: 30px 0;
+}
+
+.cta-section h2 {
+  color: #4CAF50;
+}
+
+.enroll-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.enroll-button:hover {
+  background-color: #45a049;
+}
+
+
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-username {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #535960; /* You can choose any color you prefer */
+  font-weight: bold;
+}
+
+
+
+/* Createpost css.................................................... */
+
+/* CreatePostForm.css */
+
+.form-container {
+  background-color: #f8f9fa;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+}
+
+.form-container h2 {
+  color: #343a40;
+}
+
+.form-container .form-control {
+  border-radius: 4px;
+}
+
+.form-container .form-control:focus {
+  box-shadow: none;
+  border-color: #007bff;
+}
+
+.form-container .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.form-container .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* >>>>>>>>>>>>>Homrpage View button>>>>>>>>>>>>>>>>>> */
+.post-list {
+  padding: 1rem;
+}
+
+.post-image {
+  height: 270px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.post-header {
+  align-items: center;
+}
+
+.like-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.like-count {
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.like-btn {
+  width: auto;
+}
+
+.post-info {
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+
+.post-author {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.post-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.post-description {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+/* 
+.follow-btn {
+  width: 50%;
+  margin-bottom: 5px;
+} */
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.view-btn,
+.report-btn {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .post-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post-info {
+    margin-left: 0;
+  }
+}
+
+/* ...........................................................message................................................... */
+
+
+.notification-container {
+  position: relative;
+  display: inline-block;
+}
+
+.notification-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.notification-button:hover {
+  background-color: #0056b3;
+}
+
+.notification-dropdown {
+  position: absolute;
+  background-color: white;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 5px;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-left: 320px;
+}
+
+.message-item {
+  padding: 10px;
+  border-bottom: 1px solid #f1f1f1;
+  color: #2a2c2d;
+}
+
+.message-item p {
+  margin: 0;
+}
+
+.notification-dropdown p:last-child {
+  border-bottom: none;
+}
+.notification-container {
+  position: relative; /* Container for positioning the badge */
+}
+
+.notification-badge {
+  position: absolute;
+  top: -2px; /* Adjust based on your design */
+  right: -5px; /* Adjust based on your design */
+  background-color: red; /* Badge color */
+  color: white; /* Text color */
+  border-radius: 50%;
+  width: 20px; /* Size of the badge */
+  height: 20px; /* Size of the badge */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px; /* Font size of the number */
+  font-weight: bold;
+  margin-right: 13px;
+}
